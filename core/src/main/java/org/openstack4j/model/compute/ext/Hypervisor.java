@@ -64,6 +64,20 @@ public interface Hypervisor extends ModelEntity {
 	 * @return the hypervisor implementation type
 	 */
 	String getType();
+	
+	/**
+	 * Gets the hypervisor status.
+	 * 
+	 * @return hypervisor status ("up" or "down")
+	 */
+	String getStatus();
+	
+	/**
+	 * Gets the hypervisor state.
+	 * 
+	 * @return hypervisor state ("enabled" or "disabled")
+	 */
+	String getState();
 
 	/**
 	 * Gets the version of the hypervisor

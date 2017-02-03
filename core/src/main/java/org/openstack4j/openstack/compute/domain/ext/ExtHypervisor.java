@@ -27,6 +27,8 @@ public class ExtHypervisor implements Hypervisor {
     private int freeRam;
     @JsonProperty("hypervisor_type")
     private String type;
+    private String state;
+    private String status;
     @JsonProperty("hypervisor_hostname")
     private String hypervisorHostname;
     @JsonProperty("host_ip")
@@ -85,6 +87,16 @@ public class ExtHypervisor implements Hypervisor {
     @Override
     public String getType() {
         return type;
+    }
+    
+    @Override
+    public String getState() {
+    	return state;
+    }
+    
+    @Override
+    public String getStatus() {
+    	return status;
     }
 
     @Override
